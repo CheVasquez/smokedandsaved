@@ -1,54 +1,76 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Smoked And Saved</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoked & Saved</title>
     <style>
-      body {
-        background-color: #1f1f1f;
-        color: #f5f5f5;
-        font-family: 'Segoe UI', sans-serif;
-        text-align: center;
-        padding: 2rem;
-      }
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-      }
-      h2 {
-        font-weight: 400;
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-        color: #c7a17a;
-      }
-      .cta {
-        background-color: #c7a17a;
-        color: #1f1f1f;
-        border: none;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-      .cta:hover {
-        background-color: #a98661;
-      }
-      .note {
-        margin-top: 2rem;
-        font-size: 0.9rem;
-        color: #888;
-      }
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3.5em;
+            color: #d2691e;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #f5deb3;
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #dcdcdc;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #d2691e;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #b55212;
+        }
+        .smoke {
+            font-size: 3em;
+            color: #777;
+            margin-top: -40px;
+            margin-bottom: 20px;
+            animation: rise 3s infinite ease-in-out;
+        }
+        @keyframes rise {
+            0% { transform: translateY(0); opacity: 0.6; }
+            50% { transform: translateY(-10px); opacity: 1; }
+            100% { transform: translateY(-20px); opacity: 0.4; }
+        }
     </style>
-  </head>
-  <body>
-    <h1>Smoked & Saved</h1>
-    <h2>Low and slow — seasoned by grace.</h2>
-    <p>Barbecue that blesses. Soul food for the soul. Whether it’s a future food truck, faith-based spice brand, or a smoky message to the world—this brand is bold, righteous, and ready.</p>
-    <button class="cta" onclick="window.location.href='mailto:hello@smokedandsaved.com'">Inquire About This Domain</button>
-    <p class="note">Domain currently available for purchase. Built for believers, creators, and cooks alike.</p>
-  </body>
+</head>
+<body>
+    <div class="container">
+        <div class="smoke">~</div>
+        <h1>Smoked &amp; Saved</h1>
+        <h2>Low and slow — seasoned by grace.</h2>
+        <p>Barbecue that blesses. Soul food for the saved. Whether it’s a flame-kissed spice kernel,<br>
+        a future food truck, or a smoky message to the world—this brand is bold, righteous, and ready.</p>
+        <a href="mailto:chavishorton01@gmail.com" class="button">Send a Message to the Pitmaster</a>
+    </div>
+</body>
 </html>
